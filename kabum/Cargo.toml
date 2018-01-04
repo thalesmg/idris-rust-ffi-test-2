@@ -1,0 +1,16 @@
+[package]
+name = "kabum"
+version = "0.1.0"
+authors = ["Thales Macedo Garitezi <tgaritezi@xerpa.com.br>"]
+
+[dependencies]
+libc = "0.2.35"
+
+[lib]
+name = "kabumlib"
+crate-type = ["dylib", "rlib"]
+path = "src/lib.rs"
+
+[[bin]]
+name = "kabumbin"
+path = "src/main.rs"
